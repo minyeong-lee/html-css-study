@@ -1,0 +1,32 @@
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/sky.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+    margin-top: 10px;
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.content {
+    color: white;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.go-btn {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 12px;
+    border-radius: 20px;
+    color: darkcyan;
+}
