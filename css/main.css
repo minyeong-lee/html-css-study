@@ -6,7 +6,8 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 1px;
-    margin-top: 10px;
+    position: relative;
+    /* margin-top: 10px; */
 }
 
 .main-title {
@@ -22,11 +23,43 @@
     margin-top: 45px;
 }
 
-.go-btn {
+.main-button {
     display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    font-size: 15px;
+    background: white;
+    border: none;
+    border-radius: 15px;
+    /* margin-top: 40px; */
+    position: absolute;
+    left: 0;
+    right: 0;
     margin: auto;
-    margin-top: 30px;
-    padding: 12px;
-    border-radius: 20px;
-    color: darkcyan;
+    width: 150px;
+    /* top: 30px; */
+    /* bottom: 20px; */
+}
+
+/* position 부여하면 1. 좌표 이동가능, 2. 공중에 뜸 */
+/* position: fixed;    현재 화면을 기준으로 고정되는 요소가 필요하면(상단 메뉴 고정) */
+/* position: absolute;  내 부모(내 부모 태그 중 relative가진 부모) 태그가 기준 */
+
+/* position: relative  내 원래 위치가 기준 */
+
+.text-box {
+    width: 500px;
+    height: 200px;
+    background-color: bisque;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+
+    padding: 30px;
 }
