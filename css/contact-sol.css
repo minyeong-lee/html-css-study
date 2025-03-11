@@ -1,0 +1,61 @@
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+/* , 콤마 뒤에 태그 말고도 클래스명도 붙일 수 있음 */
+
+/* input {
+    box-sizing: border-box;
+}
+
+textarea {
+    box-sizing: border-box;
+} */
+
+.form-background {
+    background-color: black;
+    padding: 30px;;
+}
+
+.form-white {
+    background-color: white;
+    padding: 30px;;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* 모든 input에 일괄 적용 */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* box-sizing: border-box; */
+}
+/* input의 실제 width는 100% + 20px임 */
+/* input도 네모 박스라서 실제 width가 의미하는 것은 컨텐츠 영역임 */
+/* box-sizing: border-box; 가 그래서 필요함 => 상단에 일괄 적용 */
+
+.w-50 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.w-100 {
+    width: 100%;
+    padding: 10px;
+}
+
+.yellow-button {
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+}
+
+/* 주요사항 */
+    /* 1. 셀렉터에 콤마쓰면 여러 개 동시 선택 가능 */
+    /* 2. 재사용가능하게 class 만들자 */
+    /* 3. input 디자인 할 때 <label> 태그 유용함 */

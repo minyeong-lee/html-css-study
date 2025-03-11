@@ -84,3 +84,11 @@ body {
 }
 /* z-dindex   공중에 떠 있으면 누가 맨 앞에 올 것인가? 를 조정 */
 /* max-width  width %의 문제는 PC사이즈에서 너무 큼. 이걸로 최대 너비 설정 */
+
+
+input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+}
+/* 모든 input말고 해당되는 속성만 적용 */
