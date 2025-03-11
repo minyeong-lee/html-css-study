@@ -1,8 +1,23 @@
+
+div {
+    box-sizing: border-box;
+}
+/* 이렇게 만들어두고 시작하면 편함. 정확한 박스 사이즈 재단 */
+
+body {
+    margin: 0px;
+}
+/* 이것도 써 두면 편함 */
+
+/* 브라우저마다 디자인이 다르게 보일 수 있음 */
+/* 그래서 호환성 이슈 해결책부터 첨부하는 경우가 있음. 검색키워드 : normalize.css */
+/* 해당 파일을 link 태그로 아예 따로 파일 첨부할 수도 있음 */
+
 .main-background {
     width: 100%;
     height: 500px;
     background-image: url(../img/sky.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 1px;
@@ -40,6 +55,7 @@
     width: 150px;
     /* top: 30px; */
     /* bottom: 20px; */
+    z-index: 5;
 }
 
 /* position 부여하면 1. 좌표 이동가능, 2. 공중에 뜸 */
@@ -49,17 +65,22 @@
 /* position: relative  내 원래 위치가 기준 */
 
 .text-box {
-    width: 500px;
+    width: 80%; /* 내 부모의! 반응형 웹페이지에 사용 */
+    max-width: 600px;/*최대 폭 지정. width의 %와 함께 사용하면 유용*/
     height: 200px;
-    background-color: bisque;
+    background-color: #eee;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 80px;
-
-    padding: 30px;
+    /* position: absolute; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 80px; */
+    position: relative;
+    top: -40px;
+    padding: 20px;
+    box-sizing: border-box; /* 이게 없으면 실제 max-width가 600이더라도 paading 포함해서 640px이 된다 */
 }
+/* z-dindex   공중에 떠 있으면 누가 맨 앞에 올 것인가? 를 조정 */
+/* max-width  width %의 문제는 PC사이즈에서 너무 큼. 이걸로 최대 너비 설정 */
